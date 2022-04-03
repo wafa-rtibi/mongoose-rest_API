@@ -1,0 +1,26 @@
+{
+  "name": "mongoose_checkpoint",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+      "test": "echo \"Error: no test specified\" && exit 1",
+      "back": "nodemon server.js --ignore './client/'",
+      "front": "cd client && npm start",
+      "dev": "concurrently \"npm run back\" \"npm run front\""
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "cors": "^2.8.5",
+    "currently": "^0.0.8",
+    "dotenv": "^16.0.0",
+    "express": "^4.17.3",
+    "mongoose": "^6.2.9",
+    "sass": "^1.49.11"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.15"
+  }
+}
